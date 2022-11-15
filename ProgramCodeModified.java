@@ -1,16 +1,29 @@
+/**
+ * Some info about package.
+ */
 package com.nuop.tscp;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * This is the class.
+ */
 public class LiteratureIdTest {
 
   private static int basicTestCaseNumber = 1;
-  private static Integer MIN_LITERATURE_ID = 0;
-  private static Integer MAX_LITERATURE_ID = 1000000000;
-  private static List<Integer> TEST_VALUES = new ArrayList<>(List.of(
+  private static Integer minLiteratureId = 0;
+  private static Integer maxLiteratureId = 1000000000;
+  private static List<Integer> testValues = new ArrayList<>(List.of(
       1, 12, 123, 12345125, 21564354, 999999999
   ));
+
+  /**
+   * Private constructor.
+   */
+  private LiteratureIdTest() {
+
+  }
 
   /**
    * Method to perform check literature id.
@@ -19,7 +32,7 @@ public class LiteratureIdTest {
    * @return true if literature id is correct, else false
    */
   public static boolean isLiteratureIdCorrect(final Integer literatureId) {
-    return literatureId > MIN_LITERATURE_ID && literatureId < MAX_LITERATURE_ID;
+    return literatureId > minLiteratureId && literatureId < maxLiteratureId;
   }
 
   /**
@@ -44,6 +57,6 @@ public class LiteratureIdTest {
    */
   public static void main(final String[] args) {
 
-    TEST_VALUES.forEach((id) -> doTestCase(TEST_VALUES.indexOf(id), id));
+    testValues.forEach((id) -> doTestCase(testValues.indexOf(id), id));
   }
 }
