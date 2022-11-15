@@ -1,2 +1,0 @@
-[sqlfluff]
-exclude_rules = L039, L016, L014, L009
