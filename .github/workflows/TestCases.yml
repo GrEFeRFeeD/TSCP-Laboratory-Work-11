@@ -10,12 +10,7 @@ jobs:
       - name: Checkout
         uses: "actions/checkout@v3"
       
-      - name: Compile
+      - name: Compile & Execute
         run: |
           cd $GITHUB_WORKSPACE/
           java TestCases.java
-      
-      - name: Execute
-        run: |
-          cd $GITHUB_WORKSPACE/
-          java TestCases
