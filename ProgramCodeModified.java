@@ -14,19 +14,19 @@ public final class LiteratureIdTest {
   /**
    * Some information about basicTestCaseNumber.
    */
-  private static int basicTestCaseNumber = 1;
+  private static final int basicTestCaseNumber = 1;
   /**
    * Some information about minLiteratureId.
    */
-  private static Integer minLiteratureId = 0;
+  private static final Integer minLiteratureId = 0;
   /**
    * Some information about maxLiteratureId.
    */
-  private static Integer maxLiteratureId = 1000000000;
+  private static final Integer maxLiteratureId = 1000000000;
   /**
    * Some information about testValues.
    */
-  private static List<Integer> testValues = new ArrayList<>(List.of(
+  private static final List<Integer> testValues = new ArrayList<>(List.of(
       1, 12, 123, 12345125, 21564354, 999999999
   ));
 
