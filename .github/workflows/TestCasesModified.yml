@@ -1,10 +1,10 @@
-name: Test Cases
+name: Test Cases Modified
 on:
   push:
     branches: main
 
 jobs:
-  TestCases:
+  TestCasesModified:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
