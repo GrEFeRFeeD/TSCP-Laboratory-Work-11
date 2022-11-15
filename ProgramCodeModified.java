@@ -9,11 +9,26 @@ import java.util.List;
 /**
  * This is the class.
  */
-public class LiteratureIdTest {
+final public class LiteratureIdTest {
 
+  /**
+   * Some information about basicTestCaseNumber.
+   */
   private static int basicTestCaseNumber = 1;
+   
+  /**
+   * Some information about minLiteratureId.
+   */
   private static Integer minLiteratureId = 0;
+  
+  /**
+   * Some information about maxLiteratureId.
+   */
   private static Integer maxLiteratureId = 1000000000;
+  
+  /**
+   * Some information about testValues.
+   */
   private static List<Integer> testValues = new ArrayList<>(List.of(
       1, 12, 123, 12345125, 21564354, 999999999
   ));
@@ -41,7 +56,9 @@ public class LiteratureIdTest {
    * @param testCaseNumber number of current testcase
    * @param literatureId id of literature to check
    */
-  public static void doTestCase(final int testCaseNumber, final int literatureId) {
+  public static void doTestCase(final int testCaseNumber,
+                                final int literatureId) {
+    
     System.out.print("TC" + (basicTestCaseNumber + testCaseNumber) + ": ");
     if (isLiteratureIdCorrect(literatureId)) {
       System.out.println("PASSED");
