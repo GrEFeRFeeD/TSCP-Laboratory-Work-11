@@ -9,23 +9,20 @@ import java.util.List;
 /**
  * This is the class.
  */
-final public class LiteratureIdTest {
+public final class LiteratureIdTest {
 
   /**
    * Some information about basicTestCaseNumber.
    */
   private static int basicTestCaseNumber = 1;
-   
   /**
    * Some information about minLiteratureId.
    */
   private static Integer minLiteratureId = 0;
-  
   /**
    * Some information about maxLiteratureId.
    */
   private static Integer maxLiteratureId = 1000000000;
-  
   /**
    * Some information about testValues.
    */
@@ -58,7 +55,6 @@ final public class LiteratureIdTest {
    */
   public static void doTestCase(final int testCaseNumber,
                                 final int literatureId) {
-    
     System.out.print("TC" + (basicTestCaseNumber + testCaseNumber) + ": ");
     if (isLiteratureIdCorrect(literatureId)) {
       System.out.println("PASSED");
