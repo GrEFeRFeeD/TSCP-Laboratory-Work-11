@@ -12,21 +12,21 @@ import java.util.List;
 public final class LiteratureIdTest {
 
   /**
-   * Some information about basicTestCaseNumber.
+   * Some information about BASIC_TEST_CASE_NUMBER.
    */
-  private static final int basicTestCaseNumber = 1;
+  private static final int BASIC_TEST_CASE_NUMBER = 1;
   /**
-   * Some information about minLiteratureId.
+   * Some information about MIN_LITERATURE_ID.
    */
-  private static final Integer minLiteratureId = 0;
+  private static final Integer MIN_LITERATURE_ID = 0;
   /**
-   * Some information about maxLiteratureId.
+   * Some information about MAX_LITERATURE_ID.
    */
-  private static final Integer maxLiteratureId = 1000000000;
+  private static final Integer MAX_LITERATURE_ID = 1000000000;
   /**
-   * Some information about testValues.
+   * Some information about TEST_VALUES.
    */
-  private static final List<Integer> testValues = new ArrayList<>(List.of(
+  private static final List<Integer> TEST_VALUES = new ArrayList<>(List.of(
       1, 12, 123, 12345125, 21564354, 999999999
   ));
 
@@ -44,7 +44,7 @@ public final class LiteratureIdTest {
    * @return true if literature id is correct, else false
    */
   public static boolean isLiteratureIdCorrect(final Integer literatureId) {
-    return literatureId > minLiteratureId && literatureId < maxLiteratureId;
+    return literatureId > MIN_LITERATURE_ID && literatureId < MAX_LITERATURE_ID;
   }
 
   /**
@@ -54,8 +54,8 @@ public final class LiteratureIdTest {
    * @param literatureId id of literature to check
    */
   public static void doTestCase(final int testCaseNumber,
-                                final int literatureId) {
-    System.out.print("TC" + (basicTestCaseNumber + testCaseNumber) + ": ");
+      final int literatureId) {
+    System.out.print("TC" + (BASIC_TEST_CASE_NUMBER + testCaseNumber) + ": ");
     if (isLiteratureIdCorrect(literatureId)) {
       System.out.println("PASSED");
     } else {
@@ -70,6 +70,6 @@ public final class LiteratureIdTest {
    */
   public static void main(final String[] args) {
 
-    testValues.forEach((id) -> doTestCase(testValues.indexOf(id), id));
+    TEST_VALUES.forEach((id) -> doTestCase(TEST_VALUES.indexOf(id), id));
   }
 }
